@@ -111,9 +111,9 @@ flowchart LR
     G --> H[Power BI report<br/>8 pages]
 ```
 
-Data model details: [`docs/data-model.md`](docs/data-model.md)
+Data model details: [`docs/data-model.md`](Docs/data-model.md)
 
-![Data model](docs/Data_model_image.png)
+![Data model](Docs/Data_model_image.png)
 
 ## Data sources
 
