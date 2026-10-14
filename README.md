@@ -3,7 +3,7 @@
 An interactive **Power BI** report that lets you explore **2,854 players and 96 clubs** across the Premier League, La Liga, Bundesliga, Serie A and Ligue 1.
 It is built to **compare players against their positional peers, spot under-the-radar talent, find players with similar profiles, compare clubs, and compare leagues** — all in one consistent green-themed dashboard.
 
-![Overview page](powerbi/screenshots/Overview.png)
+![Overview page](PBI/screenshots/Overview.png)
 
 ---
 
@@ -37,27 +37,27 @@ It is built to **compare players against their positional peers, spot under-the-
 
 | Page                  | What it shows                                                                                                                                                                                                                                                     | Screenshot                                                        |
 | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
-| **Overview**          | Slicers (Nationality, Club, League, Season), KPI cards, goals by league, players by position / nationality / age, club table with crests                                                                                                                          | [view](powerbi/screenshots/Overview.png)                          |
-| **Player Profile**    | One dynamic page for every player: club crest, nationality flag, five stat tables (General, Attacking, Midfielding, Defending, Goalkeeping) that light up according to the player's position, and _More Details_ buttons that drill through to the position pages | [view](powerbi/screenshots/PlayerProfile_olmo-multi-position.png) |
-| **Attackers**         | Attacker rank, overall score, xG conversion gauge, percentile radar, Goals vs xG scatter                                                                                                                                                                          | [view](powerbi/screenshots/Attackers_mbappe.png)                  |
-| **Midfielders**       | Midfielder rank, overall score, xA conversion gauge, percentile radar, Key Passes vs xA scatter                                                                                                                                                                   | [view](powerbi/screenshots/Midfielders_olise.png)                 |
-| **Defenders**         | Defender rank, overall score, tackle success gauge, 7-axis percentile radar, Interceptions vs Tackles scatter                                                                                                                                                     | [view](powerbi/screenshots/Defenders_valverde.png)                |
-| **Goalkeepers**       | Goalkeeper rank, overall score, PSxG overperformance gauge, percentile radar, Goals Prevented vs Save % scatter                                                                                                                                                   | [view](powerbi/screenshots/Goalkeepers_garcia.png)                |
-| **Team Analysis**     | Single-select club, goal / win ranks, results donut, win / draw / loss / home / away rate gauges, four club peer scatters                                                                                                                                         | [view](powerbi/screenshots/Team_barcelona.png)                    |
-| **League Comparison** | Wins, xG per club, titles, win %, average age and clubs per league, plus a summary table                                                                                                                                                                          | [view](powerbi/screenshots/LeagueComparison.png)                  |
+| **Overview**          | Slicers (Nationality, Club, League, Season), KPI cards, goals by league, players by position / nationality / age, club table with crests                                                                                                                          | [view](PBI/screenshots/Overview.png)                          |
+| **Player Profile**    | One dynamic page for every player: club crest, nationality flag, five stat tables (General, Attacking, Midfielding, Defending, Goalkeeping) that light up according to the player's position, and _More Details_ buttons that drill through to the position pages | [view](PBI/screenshots/PlayerProfile_olmo-multi-position.png) |
+| **Attackers**         | Attacker rank, overall score, xG conversion gauge, percentile radar, Goals vs xG scatter                                                                                                                                                                          | [view](PBI/screenshots/Attackers_mbappe.png)                  |
+| **Midfielders**       | Midfielder rank, overall score, xA conversion gauge, percentile radar, Key Passes vs xA scatter                                                                                                                                                                   | [view](PBI/screenshots/Midfielders_olise.png)                 |
+| **Defenders**         | Defender rank, overall score, tackle success gauge, 7-axis percentile radar, Interceptions vs Tackles scatter                                                                                                                                                     | [view](PBI/screenshots/Defenders_valverde.png)                |
+| **Goalkeepers**       | Goalkeeper rank, overall score, PSxG overperformance gauge, percentile radar, Goals Prevented vs Save % scatter                                                                                                                                                   | [view](PBI/screenshots/Goalkeepers_garcia.png)                |
+| **Team Analysis**     | Single-select club, goal / win ranks, results donut, win / draw / loss / home / away rate gauges, four club peer scatters                                                                                                                                         | [view](PBI/screenshots/Team_barcelona.png)                    |
+| **League Comparison** | Wins, xG per club, titles, win %, average age and clubs per league, plus a summary table                                                                                                                                                                          | [view](PBI/screenshots/LeagueComparison.png)                  |
 
 <table>
   <tr>
-    <td><img src="powerbi/screenshots/PlayerProfile_olmo-multi-position.png" alt="Player Profile"></td>
-    <td><img src="powerbi/screenshots/Attackers_mbappe.png" alt="Attackers"></td>
+    <td><img src="PBI/screenshots/PlayerProfile_olmo-multi-position.png" alt="Player Profile"></td>
+    <td><img src="PBI/screenshots/Attackers_mbappe.png" alt="Attackers"></td>
   </tr>
   <tr>
-    <td><img src="powerbi/screenshots/Team_barcelona.png" alt="Team Analysis"></td>
-    <td><img src="powerbi/screenshots/LeagueComparison.png" alt="League Comparison"></td>
+    <td><img src="PBI/screenshots/Team_barcelona.png" alt="Team Analysis"></td>
+    <td><img src="PBI/screenshots/LeagueComparison.png" alt="League Comparison"></td>
   </tr>
 </table>
 
-A full page-by-page walkthrough (visuals, interactions, measures) is in [`powerbi/README.md`](powerbi/README.md).
+A full page-by-page walkthrough (visuals, interactions, measures) is in [`powerbi/README.md`](PBI/README.md).
 
 ## Highlights from the data
 
@@ -153,7 +153,7 @@ football-analytics-powerbi/
    This writes `DimPlayer.csv`, `DimClub.csv`, `DimCompetition.csv` and `FactPlayerStats.csv`.
 3. **Enrich the dimensions** — add `LogoURL` and the club results columns to `DimClub`, and a nationality → country / flag lookup (`DimNationality`).
 4. **Load into Power BI**, then in Power Query add `PrimaryPosition` to `DimPlayer` and attach `TacklesWon` and `PostShotxG` to `FactPlayerStats` (two columns that come from the raw file).
-5. **Recreate the model and measures** using [`docs/data-model.md`](docs/data-model.md) and [`powerbi/README.md`](powerbi/README.md).
+5. **Recreate the model and measures** using [`docs/data-model.md`](Docs/data-model.md) and [`powerbi/README.md`](PBI/README.md).
 
 ## Limitations & status
 
