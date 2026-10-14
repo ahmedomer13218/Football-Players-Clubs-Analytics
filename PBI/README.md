@@ -1,7 +1,7 @@
 # Power BI Report Guide
 
 This folder documents the Power BI report: what each page shows, how the interactions work, and every measure behind the visuals.
-For tables, columns and relationships see [`../docs/data-model.md`](../docs/data-model.md).
+For tables, columns and relationships see [`../docs/data-model.md`](../Docs/data-model.md).
 
 **Report at a glance**
 
