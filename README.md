@@ -172,4 +172,4 @@ football-analytics-powerbi/
 
 **[Ahmed Omar]**
 
-- LinkedIn: [[LinkedIn profile](https://www.linkedin.com/in/ahmed-mohamed-omer-439ab6277/)]
+- LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/ahmed-mohammed-omar-439ab6277/)
